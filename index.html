@@ -21,20 +21,24 @@
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link ">About</a></li>
+            <li><a href="#skills" class="nav-link ">Skills</a></li>
+            <li><a href="#Projects" class="nav-link ">Projects</a></li>
+            <div class="darkCont">
+                <div class="bx bx-moon" id="darkmode"></div>
+            </div>
         </ul>
     </header>
     <!-- Navbar Section End -->
     <!-- Home Section Start -->
     <section class="home" id="home">
         <div class="social">
-            <a href="https://github.com/salwa-yehya"  target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/salwa-yehya-794236253/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/salwa_yehya/?next=%2F" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/salwa-yehya" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/salwa-yehya-794236253/" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/salwa_yehya/?next=%2F" target="_blank"><i
+                    class='bx bxl-instagram'></i></a>
 
         </div>
         <div class="home-img">
@@ -43,10 +47,13 @@
         <div class="home-text">
             <span>Hello, I'm</span>
             <h1>Salwa yehya</h1>
-            <h2>Full Stack Web Developer</h2>
-            <br>
-            <a href="https://www.dropbox.com/s/a2y6k52ghutijot/salwa-cv.pdf?dl=0" target="_blank" class="btn" download>Download
+            <span id="auto-type" style=" font-size:1.5 ; font-weight: 600;
+  color: #e31b78;"></span>
+            <br><br>
+            <a href="https://www.dropbox.com/s/wampkorqwstjhkg/SalwaYehya-CV.pdf?dl=0" target="_blank" class="btn"
+                download>Download
                 CV</a>
+
         </div>
     </section>
     <!-- Home Section End -->
@@ -61,11 +68,12 @@
 
         <div class="about-container">
             <div class="about-img">
-                <img src="./img/aboutme.png" alt="about">
+                <img src="./img/about.png" alt="about">
             </div>
             <div class="about-text">
                 <br>
-                <p>My portfolio is a reflection of my passion for programming and my commitment to continuous learning.
+                <p><span style="color: #e31b78;">My portfolio</span> is a reflection of my passion for programming and
+                    my commitment to continuous learning.
                     I'm always looking for new challenges and opportunities to improve my skills and create something
                     meaningful. Thanks for visiting!"</p>
                 <br>
@@ -85,7 +93,7 @@
                         <span>salwayehyabuafash@gmail.com</span>
                     </div>
                 </div>
-                <a href="https://www.dropbox.com/s/a2y6k52ghutijot/salwa-cv.pdf?dl=0" target="_blank" class="btn">Download Cv</a>
+                <a href="#" target="_blank" class="btn">Contact Me </a>
             </div>
         </div>
         <br>
@@ -99,7 +107,7 @@
         <div class="heading">
             <h2 class="slideTobottom">Skills</h2>
             <span>My Skills</span>
-            <br><br><br><br><br> 
+            <br><br><br><br><br>
         </div>
         <br>
         <div class="skill-icons">
@@ -147,60 +155,153 @@
     <section class="Projects" id="Projects">
         <div class="heading">
             <h2 class="slideTobottom">Projects</h2>
-            <span>My Projects</span>
+            <span>Recent Works</span>
         </div>
         <br><br>
-        <div class="Projects-content ">
+        <!-- <div class="work_filters">
+            <span class="work_item active-work" >All</span>
+            <span class="work_item">Full Stack App</span>
+            <span class="work_item">Front-End Projects</span>
+           
+        </div> -->
 
-            <div class="Projects-box ">
-                <h3>Full Functionality Ecommerce </h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/MasterPe" target="_blank">Reflection</a>
+        <div class="Projects-content">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p1.png" alt="image" >
+                </div>
+               
+                <div class="stack">
+                    <span class="stack-btn laravel">Laravel</span><span class="stack-btn php">PHP</span>
+                </div>
+                <div class="card-content">
+                    <h3>Reflection</h3>
+
+                    <p>Full Functionality Ecommerce .</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/MasterPe" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p2.png" alt="image">
+                </div>
+                
+                <div class="stack">
+                    <span class="stack-btn react">React.js</span>
+                    <span class="stack-btn redux">Redux</span>
+                </div>
+                <div class="card-content">
+                    <h3>Bookly</h3>
+                    <p>Redux Books App.</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/book_app_redux" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p3.png" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn tjs">Tree.js</span>
+                </div>
+                <div class="card-content">
+                    <h3>C-Sphere</h3>
+                    <p>Treejs Color Changeable Sphere.</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/3D_project" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p4.png" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn react">React.js</span>
+                    <span class="stack-btn php">PHP</span>
+                </div>
+                <div class="card-content">
+                    <h3>Seeker</h3>
+                    <p>React social media platform</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/Group6_React" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p5.png" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn html">HTML</span>
+                    <span class="stack-btn css">CSS</span>
+                    <span class="stack-btn js">JS</span>
+                </div>
+                <div class="card-content">
+                    <h3>DMY</h3>
+                    <p>Random Message</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/random_message_website"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p6.png" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn tjs">Three.js</span>
+
+                </div>
+                <div class="card-content">
+                    <h3>Solar system</h3>
+                    <p>Threejs Solar System</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/3D_solar_system" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/p7.png" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn laravel">Laravel</span>
+                    <span class="stack-btn php">PHP</span>
+
+                </div>
+                <div class="card-content">
+                    <h3>Table Share</h3>
+                    <p>Laravel Restautants Reservations</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/Cafes-Restautants-Reservations"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/project1.jpeg" alt="image">
+                </div>
+                <div class="stack">
+                    <span class="stack-btn wordpress">Wordpress</span>
+
+
+                </div>
+                <div class="card-content">
+                    <h3>Enekas</h3>
+                    <p>Wordpress Ecommerce</p>
+                    <br>
+                    <a class="github" href="https://github.com/salwa-yehya/Enekas" target="_blank">GitHub</a>
+                </div>
             </div>
 
-            <div class="Projects-box ">
-                <h3>Redux Books App</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/book_app_redux" target="_blank">Bookly</a>
-            </div>
-            <div class="Projects-box ">
-                <h3>Treejs Color Changeable Sphere</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/3D_project" target="_blank">Sphere</a>
-            </div>
-
-            <div class="Projects-box ">
-                <h3>React social media platform</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/React_project-1/tree/main" target="_blank">Seeker</a>
-            </div>
-
-            <div class="Projects-box ">
-                <h3>Random Message</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/random_message_website" target="_blank">DMY</a>
-            </div>
-
-            <div class="Projects-box ">
-                <h3>Threejs Solar System </h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/3D_solar_system" target="_blank">Solar system</a>
-            </div>
-
-            <div class="Projects-box ">
-                <h3>Laravel Restautants Reservations</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/Cafes-Restautants-Reservations" target="_blank">Table Share</a>
-            </div>
-
-            <div class="Projects-box ">
-                <h3>Wordpress Ecommerce</h3>
-                <br>
-                <a href="https://github.com/salwa-yehya/Enekas" target="_blank">Enekas</a>
-            </div>
         </div>
+
+
+
+
+
         <div class="footer">
-            <span>More in my <a href="https://github.com/salwa-yehya" target="_blank">Github </a><i class='bx bxl-github'></i></span>
+            <span>More in my <a href="https://github.com/salwa-yehya" target="_blank">Github </a><i
+                    class='bx bxl-github'></i></span>
 
         </div>
     </section>
@@ -214,7 +315,17 @@
 
     <!-- Javascript -->
     <script src="script.js"></script>
+    <script src="data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.3.2/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed("#auto-type", {
+            strings: ["Full Stack Web Developer", "SEO Specialist"],
+            typeSpeed: 50,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
