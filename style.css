@@ -15,7 +15,7 @@
   --main-color: #e31b78;
   --bg-color: #fff;
   --text-color: #000;
-  --hover: #;
+  --hover: #e31b78;
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
@@ -165,7 +165,7 @@ header.shadow {
 
 .home-text h1 {
   font-size: var(--big-font);
-  animation: slideToLift 1s ease-in;
+  /* animation: slideToLift 1s ease-in; */
 }
 
 .home-text h2 {
@@ -203,6 +203,8 @@ header.shadow {
   border-radius: 0.5rem;
   border: 6px solid #fc74b7;
   transition: all 1s;
+  max-width: 170px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -219,9 +221,17 @@ header.shadow {
 
 .about-img img {
   width: 80%;
-
+  animation: move 3s infinite ease alternate;
 }
 
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px) scale(1.03);
+  }
+}
 .about-text p {
   font-size: var(--p-font);
   font-weight: 400;
@@ -341,7 +351,7 @@ span {
   object-fit: cover;
 }
 .card .card-image img{
-
+  border-radius: 7px;
   max-width: 250px;
  
   
@@ -408,6 +418,7 @@ span {
 
 .github {
   color: #739150;
+  margin-right: 3px;
 }
 
 .status {
@@ -415,6 +426,46 @@ span {
 }
 
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.imgContainer .img {
+  width: 80%;
+  animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0px) scale(1.03);
+  }
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input,
+.textArea {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bbb;
+  border: 3px solid #bbb;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
 
