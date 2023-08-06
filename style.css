@@ -132,6 +132,16 @@ header.shadow {
   position: relative;
   cursor: pointer;
 }
+.darkCont .bx-moon{
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+
+  .darkCont {
+    display: none;
+  }
+}
+
 
 .home {
   position: relative;
@@ -437,6 +447,7 @@ span {
 .imgContainer .img {
   width: 80%;
   animation: move 3s infinite ease alternate;
+  
 }
 
 @keyframes move {
@@ -449,7 +460,7 @@ span {
 }
 
 .form {
-  flex: 1;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -630,8 +641,15 @@ span {
   .about-container {
     grid-template-columns: 1fr;
   }
+  .content {
+    grid-template-columns: 1fr;
+  }
 
   .about-img {
+    display: flex;
+    justify-content: center;
+  }
+  .imgContainer .img {
     display: flex;
     justify-content: center;
   }
