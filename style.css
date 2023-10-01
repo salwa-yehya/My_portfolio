@@ -9,6 +9,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
+ 
 }
 
 :root {
@@ -739,5 +740,23 @@ span {
     padding: 3px 5px;
   };
 }
-/* ------------------------------- */
+/* __ VS HTML TO CSS __ */
 
+.Projects {
+}
+.heading {
+}
+.title {
+}
+.content {
+}
+.card {
+}
+.name {
+}
+.desc {
+}
+.list-item {
+}
+.list {
+}
