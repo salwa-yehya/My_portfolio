@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -163,9 +163,8 @@ header.shadow {
   /* background-color: #fff; */
   border-radius: 50%;
   border: 8px solid #fc74b7;
-  ;
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e31b78, 0 0 20px #e31b78, 0 0 25px #e31b78, 0 0 30px #e31b78, 0 0 35px #e31b78;
-  ;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 05px #e31b78, 0 0 10px #e31b78, 0 0 15px #e31b78, 0 0 10px #e31b78, 0 0 15px #e31b78;
+  
 }
 
 .home-text span {

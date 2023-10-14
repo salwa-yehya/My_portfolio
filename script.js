@@ -3,7 +3,6 @@
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
-let darkmode = document.querySelector("#darkmode");
 
 
 window.addEventListener("scroll", () => {
@@ -18,7 +17,7 @@ window.onscroll = () => {
 };
 
 
-
+let darkmode = document.querySelector("#darkmode");
 darkmode.onclick = () => {
   if (darkmode.classList.contains("bx-moon")) {  
     darkmode.classList.replace("bx-moon", "bx-sun"); 
