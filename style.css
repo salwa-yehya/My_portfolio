@@ -9,13 +9,13 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
- 
+  overflow-x: hidden;
 }
 
 :root {
   --main-color: #e31b78;
-  --bg-color: #fff;
-  --text-color: #000;
+  --bg-color: #121212;
+  --text-color: #FFF4F4;
   --hover: #e31b78;
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -27,9 +27,8 @@ section {
 }
 
 body.active {
-  --text-color: #fff;
-  --bg-color: #000;
-  
+  --bg-color: #fff;
+  --text-color: #000;
 }
 
 body {
@@ -461,6 +460,7 @@ span {
 }
 
 .form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -740,23 +740,5 @@ span {
     padding: 3px 5px;
   };
 }
-/* __ VS HTML TO CSS __ */
 
-.Projects {
-}
-.heading {
-}
-.title {
-}
-.content {
-}
-.card {
-}
-.name {
-}
-.desc {
-}
-.list-item {
-}
-.list {
-}
+

@@ -3,7 +3,7 @@
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
-
+let darkmode = document.querySelector("#darkmode");
 
 
 window.addEventListener("scroll", () => {
@@ -17,16 +17,15 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-// Dark Mode / light mode
-let darkmode = document.querySelector("#darkmode");
+
 
 darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
+  if (darkmode.classList.contains("bx-moon")) {  
+    darkmode.classList.replace("bx-moon", "bx-sun"); 
     document.body.classList.add("active");
     darkmode.style.transform = "translateX(12px)";
   } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
+    darkmode.classList.replace("bx-sun", "bx-moon"); 
     document.body.classList.remove("active");
     darkmode.style.transform = "translateX(-2px)";
   }
