@@ -703,6 +703,12 @@ span {
   .contact-button {
     margin-left: 25%;
   }
+  .input,
+.textArea {
+  padding: 10px;
+  margin: 5px;
+  font-weight: 600;
+}
 }
 
 .skill-icons {
