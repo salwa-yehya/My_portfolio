@@ -210,15 +210,26 @@ header.shadow {
   color: #fff;
   padding: 0.7rem 1.3rem;
   border-radius: 0.5rem;
-  border: 6px solid #fc74b7;
+  border: 3px solid #fc74b7;
   transition: all 1s;
   max-width: 170px;
   text-align: center;
 }
-
-.btn:hover {
-  transform: scale(1.05) rotate(-1deg);
+.btn_contact{
+  display: inline-block;
+  color:var(--text-color);
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+  border: 3px solid #fc74b7;
+  transition: all 1s;
+  max-width: 170px;
+  text-align: center;
+  margin-left: 10px;
 }
+
+/* .btn:hover {
+  transform: scale(1.05) rotate(-1deg);
+} */
 
 
 .about-container {
@@ -332,7 +343,17 @@ span {
   width: 80%;
 }
 
-.Projects-content {
+.Projects-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  column-gap:3rem;
+ 
+}
+
+.Certificates-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   justify-content: center;
@@ -357,7 +378,7 @@ span {
  
 }
 .card .card-image {
-  object-fit: cover;
+  object-fit :cover;
 }
 .card .card-image img{
   border-radius: 7px;
@@ -373,6 +394,7 @@ span {
 
 
 .stack{
+  margin-top: .5rem;
   display: flex;
   gap: .5rem;
 }
@@ -399,7 +421,9 @@ span {
 .css {
   background: #264ce4d5;
 }
-
+.styled_components{
+  background: #264ce4d5;
+}
 .js {
   background: #F0DB4F;
 }
