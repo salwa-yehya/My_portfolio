@@ -208,7 +208,7 @@ header.shadow {
   display: inline-block;
   background: var(--main-color);
   color: #fff;
-  padding: 0.7rem 1.3rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 3px solid #fc74b7;
   transition: all 1s;
@@ -218,13 +218,13 @@ header.shadow {
 .btn_contact{
   display: inline-block;
   color:var(--text-color);
-  padding: 0.7rem 1.3rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 3px solid #fc74b7;
   transition: all 1s;
   max-width: 170px;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 /* .btn:hover {
@@ -509,9 +509,10 @@ span {
 .input,
 .textArea {
   padding: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
   background-color: transparent;
   border: none;
+  border-radius: 12px;
   outline: none;
   color: #bbb;
   border: 2px solid #bbb;

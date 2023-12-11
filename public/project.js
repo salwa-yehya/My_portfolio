@@ -3,7 +3,7 @@ const projects = [
     {
         name: 'GPT-3',
         description: 'Modern UI/UX GPT-3 using React.js , Designed by Figma.',
-        stack: ['React', 'CSS'],
+        stack: ['React'],
         imageSrc: './img/gpt.png',
         githubLink: 'https://github.com/salwa-yehya/React-GPT3',
         demoLink: 'https://reactapp-43d72.web.app/'
@@ -11,7 +11,7 @@ const projects = [
     {
         name: 'POM Loop',
         description: 'A Productivity Timer App for Efficient Study and Work',
-        stack: ['React' , 'CSS'],
+        stack: ['React' ],
         imageSrc: './img/loop.png',
         githubLink: 'https://github.com/salwa-yehya/Pom_Loop',
         demoLink: 'https://pom-loop.web.app/'
