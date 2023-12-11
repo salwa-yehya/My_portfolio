@@ -1,15 +1,24 @@
 const certificates = [
     {
-        name :'test',
-        description :'tset tset tset',
-        skills :['html', 'css'],
-        imageSrc:'./img/gpt.png',       
+        name :'Full Stack web Developer Certificate',
+        description :'Issued by Simplon.co',
+        link : 'https://www.linkedin.com/company/simplon-co/',
+        skills :['HTML' , 'CSS' , 'JS', 'React' , 'PHP' , 'Laravel'],
+        imageSrc:'./img/full.jpeg',       
     },
     {
-        name :'test',
-        description :'tset tset tset',
-        skills :['html', 'css'],
-        imageSrc:'./img/gpt.png',       
+        name :'Introduction to Python Certificate',
+        description :'Issued by soloLearn',
+        link : 'https://www.sololearn.com/en/',
+        skills :['Python'],
+        imageSrc:'./img/python_course.jpg',       
+    },
+    {
+        name :'Google Analytics for Beginners',
+        description :'Issued by Google Analytics Academy',
+        link :'https://analytics.google.com/analytics/academy/',
+        skills :['GoogleAnalytics'],
+        imageSrc:'./img/Google.jpeg',       
     },
 ];
 
@@ -26,6 +35,8 @@ function creatCertificatesCard(certificate){
     const img = document.createElement('img');
     img.src = certificate.imageSrc;
     img.alt ='Certificate Image';
+
+    
     cardImage.appendChild(img);
 
     // add skills info
@@ -43,7 +54,9 @@ function creatCertificatesCard(certificate){
     cardContent.classList.add('card-content');
     cardContent.innerHTML = `
     <h3> ${certificate.name} </h3>
-    <p> ${certificate.description} </p>
+    <a class="link" title="click me" href="${certificate.link}" target="_blank"><p> ${certificate.description}</p></a>
+
+    
     `;
 
     // Assemble the certificate card

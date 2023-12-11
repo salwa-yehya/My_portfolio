@@ -377,14 +377,20 @@ span {
   flex-direction: column;
  
 }
+.card-content p{
+  margin-top: .6rem;
+}
 .card .card-image {
   object-fit :cover;
 }
 .card .card-image img{
   border-radius: 7px;
   max-width: 250px;
- 
+  cursor: pointer;
   
+}
+.card .card-image img:hover{
+  transform: scale(1.01);
 }
 
 .card:hover {
@@ -394,13 +400,15 @@ span {
 
 
 .stack{
-  margin-top: .5rem;
+  margin-top: 0rem;
   display: flex;
-  gap: .5rem;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 .stack-btn{
   font-size: .9rem;
-  min-width: 65px;
+  min-width:65px;
+
   text-align: center;
   border-radius: 7px;
   margin-bottom: 1rem;
@@ -443,6 +451,12 @@ span {
   background: #444140;
   width: 90px;
 }
+.python{
+  background: #FFD43B;
+}
+.googleanalytics{
+  background: 	#ed750a	;
+}
 .card {
   a {
     padding-right: 15px;
@@ -457,7 +471,10 @@ span {
 .status {
   color: #7699C2;
 }
-
+.link{
+  color : grey;
+  
+}
 
 .content {
   display: grid;

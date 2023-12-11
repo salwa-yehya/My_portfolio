@@ -59,7 +59,7 @@ function createProjectCard(project) {
         <p>${project.description}</p>
         <br>
         <a class="github" href="${project.githubLink}" target="_blank">GitHub</a>
-        ${project.demoLink ? `<a class="status" href="${project.demoLink}" target="_blank">Demo</a>` : ''}
+        ${project.demoLink ? `<a class="status" href="${project.demoLink}" target="_blank">Live Demo</a>` : ''}
 
     `;
 
